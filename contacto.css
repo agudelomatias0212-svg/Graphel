@@ -33,3 +33,39 @@
     margin-top: 15px;
     padding: 12px;
 }
+/* Estilos del Contenido Principal y Formulario de Contacto */
+#main {
+    padding: 20px 0;
+}
+#main-col {
+    float: left;
+    width: 65%;
+}
+.titulo-pagina {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+.contacto-form label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+    font-size: 14px;
+}
+.contacto-form input[type="text"],
+.contacto-form input[type="email"],
+.contacto-form input[type="tel"],
+.contacto-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+}
+.contacto-form textarea {
+    height: 120px;
+    resize: none;
+}
+.contacto-form .boton-1 {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+}
