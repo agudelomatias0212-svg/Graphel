@@ -1,101 +1,205 @@
-#main {
-    padding: 20px 0;
+/* --- ESTILOS GENERALES Y RESET --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
-#main-col {
-    float: left;
-    width: 65%;
-}
-.titulo-pagina {
-    margin-bottom: 15px;
-    font-size: 22px;
-}
-.contacto-form label {
-    display: block;
-    margin-top: 10px;
-    color: #333;
-    font-size: 14px;
-}
-.contacto-form input[type="text"],
-.contacto-form input[type="email"],
-.contacto-form input[type="tel"],
-.contacto-form textarea {
+
+body {
+    background-color: #ffffff; /* Fondo del navegador blanco */
+    min-height: 100vh;
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
 }
-.contacto-form textarea {
-    height: 120px;
-    resize: none;
-}
-.contacto-form .boton-1 {
+
+/* Contenedor Principal a Pantalla Completa */
+.wrapper {
     width: 100%;
-    margin-top: 15px;
-    padding: 12px;
+    max-width: 100%; 
+    background-color: #ffffff;
+    box-shadow: none; 
 }
-/* Estilos del Contenido Principal y Formulario de Contacto */
-#main {
-    padding: 20px 0;
+
+/* --- CONTENIDO PRINCIPAL --- */
+.main-content {
+    display: grid;
+    grid-template-columns: 1.8fr 1.2fr;
+    gap: 40px;
+    padding: 40px 10%; /* Evita que el formulario se pegue por completo al borde de la pantalla */
+    background-color: #ffffff;
 }
-#main-col {
-    float: left;
-    width: 65%;
-}
-.titulo-pagina {
-    margin-bottom: 15px;
-    font-size: 22px;
-}
-.contacto-form label {
-    display: block;
-    margin-top: 10px;
-    color: #333;
-    font-size: 14px;
-}
-.contacto-form input[type="text"],
-.contacto-form input[type="email"],
-.contacto-form input[type="tel"],
-.contacto-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-}
-.contacto-form textarea {
-    height: 120px;
-    resize: none;
-}
-.contacto-form .boton-1 {
-    width: 100%;
-    margin-top: 15px;
-    padding: 12px;
-}
-/* Estilos de la Barra Lateral y Contenedor del Mapa */
-aside#lateral {
-    float: right;
-    width: 30%;
-    margin-top: 45px;
-}
-aside#lateral .oscuro {
-    padding: 20px;
-    background: #35424a;
+
+/* --- CABECERA (HEADER) --- */
+header {
+    background-color: #1a1a1a;
     color: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #005a9c; /* Línea azul de acento */
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header h1 span {
+    color: #0099ff; /* Texto "Multimedia" en azul claro */
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a.active {
+    color: #0099ff; /* Enlace activo de la sección actual */
+}
+
+/* --- BARRA DE SUSCRIPCIÓN (BOLETÍN) --- */
+.newsletter-bar {
+    background-color: #0d2636;
+    color: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletter-bar h2 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 8px 15px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.newsletter-form button {
+    background-color: #ff5522;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+.main-content {
+    display: grid;
+    grid-template-columns: 1.8fr 1.2fr; /* Estructura de dos columnas */
+    gap: 40px;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+/* Formulario de Contacto (Izquierda) */
+.contact-section h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.form-group {
     margin-bottom: 15px;
 }
-aside#lateral .oscuro h3 {
-    margin-bottom: 10px;
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
-.mapa-contenedor {
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #999999;
+    font-size: 14px;
+    color: #666;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: none;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #ff5522;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Barra Lateral (Derecha) */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-box {
+    background-color: #1c2d3d;
+    color: white;
+    padding: 25px;
+}
+
+.info-box h4 {
+    color: #0099ff;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.info-box p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+/* Contenedor del Mapa */
+.map-box {
+    width: 100%;
+    height: 250px;
     border: 1px solid #ccc;
-    padding: 5px;
-    background: #fff;
+    overflow: hidden;
 }
-/* Estilos del Pie de Página */
+
+.map-box iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* --- PIE DE PÁGINA (FOOTER) --- */
 footer {
-    padding: 20px;
-    margin-top: 20px;
+    background-color: #007acc;
     color: #ffffff;
-    background-color: #00a8ff;
     text-align: center;
-    clear: both;
-    font-size: 14px;
+    padding: 15px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
 }
