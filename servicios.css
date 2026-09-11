@@ -1,0 +1,180 @@
+/* --- ESTILOS GENERALES Y RESET --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff; /* Fondo del navegador blanco */
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Contenedor Principal a Pantalla Completa */
+.wrapper {
+    width: 100%;
+    max-width: 100%; 
+    background-color: #ffffff;
+    box-shadow: none; 
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+.main-content {
+    display: grid;
+    grid-template-columns: 1.8fr 1.2fr;
+    gap: 40px;
+    padding: 40px 10%; /* Evita que las tarjetas se peguen por completo al borde de la pantalla */
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #005a9c; /* Línea azul de acento */
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header h1 span {
+    color: #0099ff; /* Texto "Multimedia" en azul claro */
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a.active {
+    color: #0099ff; /* Resalta "SERVICIOS" en azul */
+}
+
+/* --- BARRA DE SUSCRIPCIÓN (BOLETÍN) --- */
+.newsletter-bar {
+    background-color: #0d2636;
+    color: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletter-bar h2 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 8px 15px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.newsletter-form button {
+    background-color: #ff5522;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+.main-content {
+    display: grid;
+    grid-template-columns: 1.8fr 1.2fr; /* Estructura de dos columnas */
+    gap: 40px;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+/* Sección de Servicios (Izquierda) */
+.services-section h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* Cajas de cada servicio */
+.service-card {
+    background-color: #e6e6e6; /* Fondo gris claro de los servicios */
+    border: 1px solid #cccccc;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.service-card h4 {
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.service-card p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.service-card .price {
+    display: block;
+    font-size: 13px;
+    color: #333333;
+}
+
+/* Barra Lateral (Derecha) */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-box {
+    background-color: #1c2d3d;
+    color: white;
+    padding: 25px;
+}
+
+.info-box h4 {
+    color: #0099ff;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.info-box p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #dddddd;
+}
+
+/* --- PIE DE PÁGINA (FOOTER) --- */
+footer {
+    background-color: #007acc;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}

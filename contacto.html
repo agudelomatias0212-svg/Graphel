@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Multimedia - Contacto</title>
+    <!-- Vinculación con el archivo CSS externo -->
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- Cabecera -->
+        <header>
+            <h1>Diseño <span>Multimedia</span></h1>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Servicios</a>
+                <a href="#" class="active">Contacto</a>
+            </nav>
+        </header>
+
+        <!-- Barra del Boletín -->
+        <div class="newsletter-bar">
+            <h2>Subscríbete a nuestro boletín</h2>
+            <form class="newsletter-form" onsubmit="event.preventDefault();">
+                <input type="email" placeholder="Ingrese el Email..." required>
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+
+        <!-- Bloque Central -->
+        <main class="main-content">
+            <!-- Columna Izquierda: Formulario -->
+            <section class="contact-section">
+                <h3>Contacto</h3>
+                <form onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <label>Nombre</label>
+                        <input type="text" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Ingresa tu email">
+                    </div>
+                    <div class="form-group">
+                        <label>Teléfono</label>
+                        <input type="tel" placeholder="Ingresa tu teléfono">
+                    </div>
+                    <div class="form-group">
+                        <label>Celular</label>
+                        <input type="tel" placeholder="Ingresa tu celular">
+                    </div>
+                    <div class="form-group">
+                        <label>Mensaje</label>
+                        <textarea></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar</button>
+                </form>
+            </section>
+
+            <!-- Columna Derecha: Información y Mapa -->
+            <aside class="sidebar">
+                <div class="info-box">
+                    <h4>Que hacemos</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius auctor lacus nec feugiat. Phasellus sit amet ex ipsum. Praesent pharetra tincidunt tempor. Etiam velit eros, dapibus eget porta in, lacinia et magna.</p>
+                </div>
+                
+                <!-- Mapa de OpenStreetMap funcional -->
+                <div class="map-box">
+                    <iframe src="mapaGoogle.png"></iframe>
+                </div>
+            </aside>
+        </main>
+
+        <!-- Pie de página -->
+        <footer>
+            Graphel Desarrollo Web, Copyright &copy; 2017
+        </footer>
+    </div>
+
+</body>
+</html>
