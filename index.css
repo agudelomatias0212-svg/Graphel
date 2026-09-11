@@ -1,0 +1,200 @@
+/* ===== ESTILOS GENERALES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    /* con flexbox en columna hago que el pie quede siempre hasta abajo */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* este div me sirve para centrar el contenido de cada seccion */
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ===== CABECERA ===== */
+.cabecera {
+    background-color: #262a2d;
+    border-bottom: 4px solid #0e97d9;
+    padding: 25px 0;
+}
+
+/* aqui uso flexbox para poner el logo a la izquierda y el menu a la derecha */
+.cabecera-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* si la pantalla es angosta el menu se pasa para abajo */
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.logo span {
+    color: #0e97d9;
+}
+
+/* ===== MENU ===== */
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 40px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* el link de la pagina en la que estoy se ve azul */
+.menu a.activo {
+    color: #0e97d9;
+}
+
+.menu a:hover {
+    color: #0e97d9;
+}
+
+/* ===== BANNER PRINCIPAL ===== */
+.banner {
+    background-image: url(cabecera.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    /* con flexbox centro el titulo en la mitad del banner */
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.banner h2 {
+    color: #ffffff;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 25px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* ===== BOLETIN ===== */
+.boletin {
+    background-color: #262a2d;
+    padding: 30px 0;
+}
+
+/* otra vez flexbox para separar el titulo del formulario */
+.boletin-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.boletin h3 {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.formulario {
+    display: flex;
+}
+
+.formulario input {
+    width: 260px;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    color: #777777;
+}
+
+.formulario button {
+    background-color: #e8491d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* ===== TRES COLUMNAS ===== */
+.columnas {
+    padding: 50px 0;
+}
+
+/* flexbox para poner las 3 cajas una al lado de la otra */
+.columnas-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.caja {
+    /* con flex las cajas se achican solas y quedan del mismo ancho */
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.caja img {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.caja h4 {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.caja p {
+    color: #333333;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* ===== PIE DE PAGINA ===== */
+.pie {
+    background-color: #0e97d9;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.pie p {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* el banner no se debe achicar cuando la pantalla es pequeña */
+.banner {
+    flex-shrink: 0;
+}
+
+/* esta seccion crece para empujar el pie hasta abajo */
+.columnas {
+    flex-grow: 1;
+}
