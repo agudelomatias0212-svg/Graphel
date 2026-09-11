@@ -8,6 +8,10 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
+    /* con flexbox en columna hago que el pie quede siempre hasta abajo */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* este div me sirve para centrar el contenido de cada seccion */
@@ -174,4 +178,14 @@ body {
 .pie p {
     color: #ffffff;
     font-size: 14px;
+}
+
+/* el banner no se debe achicar cuando la pantalla es pequeña */
+.banner {
+    flex-shrink: 0;
+}
+
+/* esta seccion crece para empujar el pie hasta abajo */
+.columnas {
+    flex-grow: 1;
 }
