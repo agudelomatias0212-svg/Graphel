@@ -33,6 +33,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* si la pantalla es angosta el menu se pasa para abajo */
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .logo {
@@ -106,6 +109,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .boletin h3 {
@@ -144,10 +149,14 @@ body {
 .columnas-flex {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .caja {
-    width: 30%;
+    /* con flex las cajas se achican solas y quedan del mismo ancho */
+    flex: 1;
+    min-width: 250px;
     text-align: center;
 }
 

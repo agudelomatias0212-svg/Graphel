@@ -31,6 +31,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* si la pantalla es angosta el menu se pasa para abajo */
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .logo {
@@ -76,6 +79,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .boletin h3 {
@@ -114,10 +119,14 @@ body {
 .principal-flex {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .contenido {
-    width: 65%;
+    flex: 1;
+    min-width: 300px;
 }
 
 .contenido h2 {
@@ -150,9 +159,9 @@ body {
 /* ===== COLUMNA DE LA DERECHA ===== */
 .lateral {
     width: 30%;
+    min-width: 250px;
     background-color: #35424a;
     padding: 20px;
-    height: 100%;
 }
 
 .lateral h3 {
