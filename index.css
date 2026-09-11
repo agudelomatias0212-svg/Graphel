@@ -130,3 +130,48 @@ body {
     font-size: 14px;
     cursor: pointer;
 }
+
+/* ===== TRES COLUMNAS ===== */
+.columnas {
+    padding: 50px 0;
+}
+
+/* flexbox para poner las 3 cajas una al lado de la otra */
+.columnas-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.caja {
+    width: 30%;
+    text-align: center;
+}
+
+.caja img {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.caja h4 {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.caja p {
+    color: #333333;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* ===== PIE DE PAGINA ===== */
+.pie {
+    background-color: #0e97d9;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.pie p {
+    color: #ffffff;
+    font-size: 14px;
+}
