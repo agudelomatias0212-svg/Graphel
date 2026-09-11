@@ -90,3 +90,43 @@ body {
     width: 80%;
     margin: 0 auto;
 }
+
+/* ===== BOLETIN ===== */
+.boletin {
+    background-color: #262a2d;
+    padding: 30px 0;
+}
+
+/* otra vez flexbox para separar el titulo del formulario */
+.boletin-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boletin h3 {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.formulario {
+    display: flex;
+}
+
+.formulario input {
+    width: 260px;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+    color: #777777;
+}
+
+.formulario button {
+    background-color: #e8491d;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
